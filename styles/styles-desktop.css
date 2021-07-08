@@ -9,23 +9,16 @@ html{
     font-size: 62.5%;
 }
 
-@media (max-width:769px){
+@media (min-width: 770px){
 
 header{
     position: relative;
     overflow: hidden;
     width: 100%;
-    min-width: 320px;
-    height: 1058px;
-    min-height: 1058px;
+    min-width: 800px;
+    height: 789px;
+    min-height: 789px;
     background-color: black;
-}
-
-.header-nav-links{
-    position: absolute;
-    overflow: hidden;
-    width: 0px;
-    height: 0px;
 }
 
 header .header-fondo-paisaje{
@@ -33,7 +26,7 @@ header .header-fondo-paisaje{
     position: absolute;
     object-position: center;
     object-fit: cover;
-    left: -115px;
+    
     
 }
 
@@ -45,12 +38,62 @@ header .header-fondo-degrade{
 }
 
 header nav{
+    top: 0;
+    height: 94px;
     position: relative;
     display: flex;
-    margin-top: 72px;
-    margin-left: 20px;
-    margin-right: 17.5px;
+    margin-left: 70px;
+    margin-right: 70px;
     justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    height: 51px;
+}
+
+.header-nav-links a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-right: 24px;
+}
+
+.header-nav-button-container{
+    display: flex;
+    justify-content: end;
+    margin-left: 9px;
+    border-left: 1px solid #FFFFFF;
+}
+.header-nav-button-container .iniciar-sesion{
+    width: 129px;
+    height: 36px;
+    background-color: #0451DD;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    margin-left: 24px;
+    margin-right: 15px;
+}
+
+.header-nav-button-container .adherirme{
+    width: 109px;
+    height: 36px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: black;
+    border-radius: 4px;
+    border: none;
 }
 
 header nav .header-nav-logo{
@@ -60,32 +103,35 @@ header nav .header-nav-logo{
 }
 
 header nav .header-nav-menu{
-
-    width: 32px;
-    height: 32px;
+    position: absolute;
+    overflow: hidden;
+    width: 0px;
+    height: 0px;
 }
 
-.header-contenedor-central{position: relative;}
+.header-contenedor-central{
+    
+    display: flex;}
 
 header .header-parteAlta{
     position: relative;
-    margin-top: 75px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-top: 187px;
+    margin-left: 70px;
 }
 
 header .header-parteAlta h2{
- 
-    font-size: 3.6rem;
-    line-height: 44px;
-    font-weight: 400;
+    width: 482px;
+    font-size: 4.8rem;
+    line-height: 58.61px;
+    font-weight: 700;
     color: white;
 }
 
 header .header-parteAlta p{
 
     width: 82.6%;
-    margin-top: 16px;
+    height: 57px;
+    margin-top: 29px;
     font-size: 1.6rem;
     line-height: 19.2px;
     font-weight: 500;
@@ -111,7 +157,7 @@ header .header-parteAlta button{
 
 header .header-parteBaja{
     width: 100%;
-    height: 578px;
+    height: 695px;
     position: relative;
     overflow: hidden;
 }
@@ -120,46 +166,46 @@ header .header-parteBaja img{
 }
 header .header-parteBaja a{
     position: absolute;
-    bottom: 67.72px;
+    bottom: 148.72px;
 }
 
 .header-circulo{
-    top: 80px;
-    left: 20px;
-    width: 26.28px;
-    height: 26.28px;
+    top: 108px;
+    left: 0px;
+    width: 49.20px;
+    height: 48.20px;
 }
 
 .header-barraBlanca{
-    width: 68.03px;
-    height: 103.08px;
-    left: 45.67px;
-    top: 92px;
+    width: 127.35px;
+    height: 192.95px;
+    left: 48.13px;
+    top: 132.12px;
 }
 
 .header-parteAzul{
-    width: 63.39px;
-    height: 35.05px;
-    left: 249.75px;
-    bottom: 254px;
+    width: 118.17px;
+    height: 65.6px;
+    left: 430.11px;
+    bottom: 124.91px;
 }
 
 .header-camion{
-    width: 328.81px;
-    height: 206.67px;
-    left: 113.73px;
-    bottom: 286.66px;
+    width: 615.52px;
+    height: 386.87px;
+    left: 175.48px;
+    bottom: 188.51px;
 }
 
 .header-paisaje{
-    width: 230.78px;
-    height: 212.08px;
-    left: 20px;
-    bottom: 172px;
+    width: 432px;
+    height: 397px;
+    left: 0px;
+    bottom: -26px;
 }
 
 .header-icono-youtube{
-    left: 22px;
+    right: 243.42px;
     width: 17.28px;
     height: 12.57px;
 }
@@ -167,25 +213,25 @@ header .header-parteBaja a{
 .header-icono-linkedin{
     width: 16.83px;
     height: 16.83px;
-    left: 80.12px;
+    right: 185.75px;
 }
 
 .header-icono-facebook{
     width: 10.38px;
     height: 20px;
-    left: 137.78px;
+    right: 134.53px;
 }
 
 .header-icono-twitter{
     width: 16.31px;
     height: 12.88px;
-    left: 189px;
+    right: 77.49px;
 }
 
 .header-linea-horizontal{
     position: absolute;
-    left: 250px;
-    bottom: 254px;
+    left: 1030px;
+    bottom: 125px;
     width: 32.8%;
     height: 0.6px;
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 46%, rgba(255,255,255,0) 100%);
@@ -195,20 +241,21 @@ header .header-parteBaja a{
 
 .header-linea-vertical{
     position: absolute;
-    height: 296px;
+    height: 695px;
     width: 0.6px;
     bottom: 0;
-    left: 251px;
-    background: linear-gradient(to Bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 46%, rgba(255,255,255,0) 100%);
+    left: 40.2%;
+    background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 46%, rgba(255,255,255,0) 100%);
     opacity: 0.3;
 
 }
 
 .destacados{
+    margin-top: 0;
     background-color: white;
     width: 100%;
-    min-width: 320px;
-    height: auto;
+    min-width: 800px;
+    height: 663px;
     padding-bottom: 50px;
 }
 
@@ -216,31 +263,52 @@ header .header-parteBaja a{
     overflow: hidden;
     position: relative;
     display: flex;
-    margin-top: 60px;
-    padding: 0 72px;
-    flex-direction: column;
-}
-.destacados-barraLarga, .destacados-barraCurva, .destacados-barraCorta{
-    position: absolute;
-    width: 0px;
-    height: 0px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 134px 149px;
+    flex-direction: row;
 }
 
+.destacados-barraLarga, .destacados-barraCurva, .destacados-barraCorta{
+    position: absolute;   
+}
+
+.destacados-barraLarga{
+    right: 0;
+    top: 170px;
+    width: 534px;
+    height: 67px;
+}
+.destacados-barraCurva{
+    right: 504px;
+    top: 37px;
+    width: 132px;
+    height: 200px;
+}
+.destacados-barraCorta{
+    right: 569px;
+    top: -30px;
+    height: 94px;
+    width: 67px;
+}
+
+
 .destacados-titulo{
-    height: 224px;
+    display: inline-block;
+    height: 44px;
     width: 100%;
     color: black;
     font-size: 3.6rem;
     line-height: 4.4rem;
     font-weight: 400;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
 
 .destacados-items article{
-    width: 100%px;
-    height: 20%;
-    margin-bottom: 35px;
+    margin-top: 100px;
+    width: 190px;
+    height: 235px;
+    
 }
 
 .destacados-item-icono{
@@ -248,6 +316,7 @@ header .header-parteBaja a{
     height: 90px;
 }
 .destacados-item-titulo{
+    font-weight: 700;
     margin-top: 16px;
     font-size: 2.4rem;
     line-height: 3.0rem;
@@ -263,16 +332,16 @@ header .header-parteBaja a{
 
 .planes{
     width: 100%;
-    min-width: 320px;
-    height: auto;
+    min-width: 800px;
+    height: 894px;
     margin-bottom: 65px;
 }
 
 .planes-background{
     position: absolute;
+    object-fit: fill;
     width: 100%;
-    height: auto;
-    z-index: -1;
+    height: 100%;
     opacity: 0.04;
 }
 
@@ -280,8 +349,9 @@ header .header-parteBaja a{
     position: absolute;
     width: 100%;
     height: auto;
-    opacity: 0;
+    opacity: 0.7;
 }
+
 
 .planes-container-textos{
     padding-top: 100px;
@@ -294,6 +364,7 @@ header .header-parteBaja a{
 }
 
 .planes-titulo{
+    text-align: center;
     width: 82.4%;
     font-size: 4.8rem;
     line-height: 5.861rem;
@@ -303,79 +374,122 @@ header .header-parteBaja a{
 }
 
 .planes-subtitulo{
-    margin-top: 16px;
+    margin-top: 24px;
     width: 82.4%;
     font-size: 1.6rem;
     line-height: 1.92rem;
-    font-weight: 500;
+    font-weight: 400;
     color: #3C3C3C;
+    text-align: center;
+}
+
+.planes-container{
+    display: flex;
+    justify-content: center;
+    
+    
 }
 
 .planes-container-avanzado{
-    padding: 25.28px 33px 36.43px;
+    padding: 50px 51px;
     position: relative;
-    overflow: hidden;
-    width: 87%;
-    max-width: 326px;
-    min-width: 278px;
-    height: 100px;
-    background-color: #00407B;
-    border-radius: 7px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 363px;
+    height: 542px;
+    background-image: url(../assets/imagenes/planAvanzado.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 8px;
+    order: 2;
+    margin: 0 24px;
 }
 
 .planes-container-basicos{
-    padding: 25.28px 33px 36.43px;
+    padding: 93px 50px 65px 43px;
     position: relative;
-    overflow: hidden;
-    width: 87%;
-    max-width: 326px;
-    min-width: 278px;
-    height: 100px;
+    width: 329px;
+    height: 467px;
+    background-image: url(../assets/imagenes/planesBlancos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 8px;
+}
+
+.planes-avanzado-subtitulo{
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 24px;
+}
+
+.planes-avanzado-caracteristicas{
+    width: 240px;
+    height: 240px;
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    margin-top: 24px;
+    margin-left: 20px;
+    color: white;
+    
+}
+
+.planes-avanzado-boton{
+    width: 143px;
+    height: 31px;
     background-color: white;
-    border-radius: 7px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 18px;
-
+    border: none;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    color: #00407B;
+    font-weight: 700;
 }
 
-.planes-container-avanzado p{
-    overflow: hidden;
-    position: absolute;
-    width: 0;
-    height: 0;
-    top: -100px
+.planes-basico-subtitulo{
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: black;
+    margin-top: 16px;
 }
 
-.planes-container-avanzado button{
-    overflow: hidden;
-    position: absolute;
-    width: 0;
-    height: 0;
-    top: -100px
+.planes-basico-caracteristicas{
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+    font-weight: 400;
+    color: #3C3C3C;
+    margin-left: 10px;
+    margin-top: 26px;
 }
 
-.planes-container-basicos p{
-    overflow: hidden;
-    position: absolute;
-    width: 0;
-    height: 0;
-    top: -100px
+.planes-basico-boton{
+    width: 143px;
+    height: 31px;
+    background-color: #00407B;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-top: 26px;
 }
 
-.planes-container-basicos button{
-    overflow: hidden;
-    position: absolute;
-    width: 0;
-    height: 0;
-    top: -100px
+#plan-flexible{
+    order: 3;
+}
+#plan-clasico{
+    order: 1;
 }
 
 .imagenFondoBoton{
     position: absolute;
-    right: 0;
+    overflow: hidden;
+    width: 0;
+    height: 0;
 }
 
 .planes-avanzado, .planes-basicos{
@@ -384,9 +498,6 @@ header .header-parteBaja a{
     line-height: 4.4rem;
     background-color: transparent;
     border: transparent;
-    text-align: center;
-    width: 100%;
-    height: 100%;
 
 }
 
@@ -400,41 +511,57 @@ header .header-parteBaja a{
 
 .formulario{
     position: relative;
+    display: flex;
     background-color: black;
-    height: 1287px;
+    height: 803px;
+    width: 100%;
     overflow: hidden;
+    padding: 0 180px;
+    justify-content: space-between;
+    padding-bottom: 95px;
 }
 
 .fondoForm-elipse, .fondoForm-camion, .fondoForm-ele, .fondoForm-desktop-elipse, .fondoForm-desktop-pedacito {
     position: absolute;
 }
 
-.fondoForm-desktop-elipse, .fondoForm-desktop-pedacito{
+.fondoForm-desktop-pedacito{
+    object-fit: contain;
+    width: 123px;
+    height: 68px;
+    right: 181px;
+    top: 65px;
+}
+
+.fondoForm-desktop-elipse{
+    left: 0;
+    bottom: 0;
+}
+
+.fondoForm-elipse{
+    object-fit: contain;
     width: 0;
     height: 0;
 }
 
-.fondoForm-elipse{
-    z-index: 0;
-    right: 0;
-    top: 0;
-}
-
 .fondoForm-camion{
-    bottom: 0;
+    object-fit: contain;
+    width: 180px;
+    height: 431px;
+    bottom: -8px;
     right: 0;
 }
 
 .fondoForm-ele{
-    bottom: 121.73px;
-    left: 7.2%;
+    width: 168px;
+    height: 277px;
+    bottom: -8px;
+    right:571px;
 }
 
 .form-container-textos{
-    width: 88.5%;
-    margin: 0 auto;
-    margin-top: 130px;
-    margin-bottom: 57px;
+    width: 332px;
+    margin-top: 154px;
 }
 
 .form-container-textos h3{
@@ -453,21 +580,27 @@ header .header-parteBaja a{
 }
 
 .formulario-inputs{
+    margin-top: 171px;
+    height: 537px;
+    width: 639px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     border-radius: 4px;
 }
 
 .formulario-inputs form{
+    position: relative;
     display: flex;
-    flex-direction: column;
-    width: 90%;
-    z-index: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
 }
 
 .formulario-inputs form input{
-    margin-top: 16px;
-    width: 100%;
+    margin-bottom: 14px;
+    width: 48%;
     height: 44px;
     background: #FFFFFF;
     box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.04);
@@ -490,14 +623,18 @@ header .header-parteBaja a{
 
 
 .formulario-inputs form select{
-    width: 100%;
-    margin-top: 16px;
+    width: 48%;
+    margin-bottom: 14px;
     height: 44px;
     background-color: white;
+    border: none;
+    border-radius: 4px;
 }
 
 .formulario-inputs form .consulta{
+    width: 100%;
     height: 128px;
+    margin-bottom: 0px;
 
 }
 
@@ -525,9 +662,9 @@ header .header-parteBaja a{
 
 .captcha{
     left: 0px;
-    margin-top: 44px;
+    margin-top: 33px;
     padding: 26px 20px;
-    width: 81.4%;
+    width: 304px;
     height: 76px;
     background-color: #AFAFAF;
     text-align: left;
@@ -543,41 +680,53 @@ header .header-parteBaja a{
 
 
 .formulario-inputs form .botonEnviar{
+    margin-top: 20px;
     padding: 8.5px 10px;
     width: 186px;
     height: 45px;
-    margin-left: 0px;
     color: white;
     background-color: #0451DD;
     border-radius: 4px;
     border: none;
     font-weight: 700;
     font-size: 1.6rem;
+    
 }
 
 
 footer{
-    height: 847px;
+    height: 373px;
     width: 100%;
-    border-top: 7px solid #0451DD;
+    border-top: 4px solid #0451DD;
     background-color: #252525;
 }
 
 .footer{
-    margin: 75px 28% 40px 21%; 
+    position: relative;
+    width: 100%;
+    height: 320px;
+    display: flex;
+    flex-direction: row;
 }
 
 .footer .footer-logo{
     width: 190px;
     height: 92px;
+    margin-left: 70px;
+    margin-top: 95px;
+
 }
 
 footer .footer-linksInternos{
-    margin-top: 44px;
+    position: absolute;
+    left: calc(50% - 209px);
+    margin-top: 95px;
+    width: 152px;
+    height: 156px;
     font-size: 1.4rem;
     line-height: 2.0rem;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
 }
 
 footer .footer-linksInternos a{
@@ -588,7 +737,11 @@ footer .footer-linksInternos a{
 }
 
 footer .footer-linksExternos{
-    margin-top: 30px;
+    position: absolute;
+    left: calc(50% + 10px);
+    width: 165px;
+    height: 78px;
+    margin-top: 173px;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 2.0rem;
@@ -611,7 +764,9 @@ footer .footer-linksExternos div img{
 }
 
 .footer .footer-redes{
-    margin-top: 15px;
+    position: absolute;
+    left: calc(50% + 10px);
+    margin-top: 95px;
     width: 164px;
     height: 47.65px;
     display: flex;
@@ -634,6 +789,8 @@ footer .footer-linksExternos div img{
 }
 
 .footer-iniciarSesion, .footer-registrarse{
+    position: absolute;
+    right: 80px;
     width: 109px;
     height: 36px;
     font-size: 1.4rem;
@@ -645,8 +802,12 @@ footer .footer-linksExternos div img{
 }
 
 .footer-iniciarSesion{
-    margin-top: 45px;
-    margin-bottom: 15px;
+    margin-top: 68px;
+    margin-bottom: 10px;
+}
+.footer-registrarse{
+    margin-top: 129px;
+
 }
 
 footer .footer-terminos{
@@ -654,7 +815,7 @@ footer .footer-terminos{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 113px;
+    height: 51px;
     font-size: 1.2rem;
     line-height: 1.4rem;
     font-weight: 400;
@@ -669,5 +830,5 @@ footer .footer-terminos p{
     margin-left: auto;
     opacity: 0.9;
 }
-}
 
+}
